@@ -9,7 +9,7 @@ const Router = {
             })
         })
     },
-    nav: (route, addToHistory = true) => { // saves the users navigation path so the back / forward buttons work.
+    nav: (route, addToHistory = true) => {
         if(addToHistory){
             history.pushState({ route }, null, route);
         }

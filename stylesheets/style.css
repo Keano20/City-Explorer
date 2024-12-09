@@ -1,8 +1,9 @@
 body {
-    height: 125vh;
-    background-image: url('https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1733661534~exp=1733665134~hmac=abcbd54e8ace77e3f1b2ee65c51f1586574b76ba296f98920e934b7183e7d340&w=1800');
-    background-size: cover;
-    font-family: sans-serif;
-    margin-top: 80px;
-    padding: 30px;
+    background: #18b7be;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }

@@ -24,6 +24,11 @@ nav{
     letter-spacing: 2px;
     font-size: 2.2rem;
 }
+
+form label {
+    visibility: hidden;
+}
+
 #search-input{
     max-width: 400px;
     padding: 10px 20px;

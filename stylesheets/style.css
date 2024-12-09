@@ -1,9 +1,19 @@
-body {
-    background: #18b7be;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 100vh;
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+nav{
+    background-color: #0fa4af;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.3);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
 }

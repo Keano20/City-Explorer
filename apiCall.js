@@ -1,7 +1,8 @@
-async function apiCall() {
-    const url = "photon.komoot.io/api/?q=";
+export async function apiCall() {
+    const apiUrl = "https://api.api-ninjas.com/v1/city";
     try {
-        const response = await fetch(url);
+        const response = await fetch(apiUrl);
+        console.log(response);
         if (!response.ok) {
             console.error(`Response status: ${response.status}`);
         }
@@ -12,3 +13,4 @@ async function apiCall() {
         console.error(error.message);
     }
 }
+

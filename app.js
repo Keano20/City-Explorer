@@ -11,7 +11,7 @@ searchForm.addEventListener("submit", async event =>{
     if(city){
         try{
             const cityData = await apiCall(city);
-            debugger
+            console.log(cityData)
             await displayCityData(cityData);
         }
         catch (error){

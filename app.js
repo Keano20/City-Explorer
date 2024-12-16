@@ -1,10 +1,9 @@
-import {apiCall} from "./apiCall";
+import {apiCall} from "./apiCall.js";
 
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
-//const searchButton= document.getElementById('search-button')
 
-searchForm.addEventListener("submit", async(event) =>{
+searchForm.addEventListener("submit", async event =>{
     event.preventDefault();
 
     const city = searchInput.value;
@@ -12,6 +11,7 @@ searchForm.addEventListener("submit", async(event) =>{
     if(city){
         try{
             const cityData = await apiCall(city);
+            debugger
             await displayCityData(cityData);
         }
         catch (error){

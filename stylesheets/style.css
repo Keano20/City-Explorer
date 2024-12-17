@@ -8,3 +8,28 @@ body {
     position: relative;
     background-color: #1f2833;
 }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards article {
+    background: #0fa4af;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cards article h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.cards article p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}

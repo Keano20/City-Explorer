@@ -25,8 +25,19 @@ searchForm.addEventListener("submit", async event =>{
     }
 })
 
-async function displayCityData(data){
+async function displayCityData(data) {
+    const cardsContainer = document.querySelector('.cards');
+    cardsContainer.innerHTML = ''; // Clear previous results
 
+    data.data.forEach(city => {
+        const card = document.createElement('article');
+        card.innerHTML = `
+            <h2>${city.city}</h2>
+            <p>Region: ${city.region}</p>
+            <p>Country: ${city.country}</p>
+        `;
+        cardsContainer.appendChild(card);
+    });
 }
 
 function displayError(message){

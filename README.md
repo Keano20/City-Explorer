@@ -21,3 +21,9 @@ City Explorer is built using HTML, CSS, and JavaScript, with a focus on leveragi
 1. Clone the repository:
    ```bash
    git clone https://github.com/Keano20/City-Explorer.git
+2. Get your free API key from: https://rapidapi.com/wirefreethought/api/geodb-cities/playground/5978313be4b06b85e4b0da1e (Account creation required).
+
+3. Copy your API key and open the apiCall.js folder.
+
+4. Paste your API key into the empty quotation marks after 'x-rapidapi-key'. 
+5. The application should now be up and running.

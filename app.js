@@ -18,7 +18,6 @@ searchForm.addEventListener("submit", async event =>{
             console.error(error);
             displayError(error);
         }
-
     }
     else{
         displayError("Please enter a city")
@@ -27,6 +26,7 @@ searchForm.addEventListener("submit", async event =>{
 
 async function displayCityData(data) {
     const cardsContainer = document.querySelector('.cards');
+    cardsContainer.style.display = 'grid';
     cardsContainer.innerHTML = ''; // Clear previous results
 
     data.data.forEach(city => {

@@ -1,6 +1,6 @@
 export async function apiCall(city) {
-    const apiUrl = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${city}`;
-    const options = {
+    const cityApiUrl = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${city}`;
+    const cityApiOptions = {
         method: 'GET',
         headers: {
             'x-rapidapi-key': '',
@@ -9,7 +9,7 @@ export async function apiCall(city) {
     };
 
     try {
-        const response = await fetch(apiUrl, options);
+        const response = await fetch(cityApiUrl, cityApiOptions);
         return await response.json();
     } catch (error) {
         console.error("API call failed:", error);

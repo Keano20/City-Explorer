@@ -39,15 +39,17 @@ async function displayCityData({ cityData, weatherData }) {
             // Create card content
             card.innerHTML = `
                 <h2>${city.city}</h2>
-                <p>Region: ${city.region}</p>
-                <p>Country: ${city.country}</p>
+                <p><b>Region:</b> ${city.region}</p>
+                <p><b>Country:</b> ${city.country}</p>
                 <hr>
-                <h2>Current weather</h2>
-                <p>Temperature (°C): ${weatherData.temp_c}</p>
-                <p>Temperature (°F): ${weatherData.temp_f}</p>
-                <p>Feels Like (°C): ${weatherData.feelslike_c}</p>
-                <p>Feels Like (°F): ${weatherData.feelslike_f}</p>
-                <p>Humidity: ${weatherData.humidity}%</p>
+                <h2>Current weather</h2> 
+                <p><b>Temperature:</b> ${weatherData.current.temp_c} (°C):</p>
+                <p><b>Temperature:</b> ${weatherData.current.temp_f} (°F):</p>
+                <br>
+                <p><b>Feels Like:</b> ${weatherData.current.feelslike_c} (°C):</p>
+                <p><b>Feels Like:</b> ${weatherData.current.feelslike_f} (°F):</p>
+                <br>
+                <p><b>Humidity:</b> ${weatherData.current.humidity}%</p>
             `;
 
             // Append the card to the container

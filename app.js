@@ -12,6 +12,9 @@ searchForm.addEventListener("submit", async event =>{
         try{
             const cityData = await apiCall(city);
             await displayCityData(cityData);
+
+            // Show the filter form after a successful search
+            document.getElementById('filter-container').style.display = 'block';
         }
         catch (error){
             console.error(error);

@@ -63,7 +63,7 @@ async function displayCityData({ cityData, weatherData }) {
     }
 }
 
-function displayError(message){
+function displayError(errorMessage){
     const errorDisplay = document.createElement("p");
-    errorDisplay.textContent = message;
+    errorDisplay.textContent = errorMessage;
 }

@@ -8,6 +8,7 @@ body {
     position: relative;
     background-color: #1f2833;
 }
+/* Content Cards styling*/
 .cards {
     display: none;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -20,7 +21,7 @@ body {
     color: white;
     padding: 30px; /* Increased padding for larger content space */
     border-radius: 10px;
-    border: 2px solid black; /* Border around each card */
+    border: 3px solid black; /* Border around each card */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
@@ -39,4 +40,34 @@ body {
 .cards article p {
     margin-bottom: 5px;
     font-size: 1.25rem; /* Slightly larger font size */
+}
+
+/* Accessibility styling */
+.skip-link {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+}
+
+.skip-link:focus {
+    position: absolute;
+    top: 25px;
+    left: 235px;
+    z-index: 1000;
+    background-color: #0B0C10;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0fa4af; /* Match navbar background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid black ;
 }

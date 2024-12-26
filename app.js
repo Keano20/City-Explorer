@@ -27,8 +27,6 @@ searchForm.addEventListener("submit", async event =>{
 })
 
 async function displayCityData({ cityData, weatherData }) {
-    console.log(cityData);
-    console.log( weatherData);
 
     const cardsContainer = document.querySelector('.cards');
     cardsContainer.style.display = 'grid';

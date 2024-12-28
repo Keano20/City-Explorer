@@ -32,6 +32,16 @@ async function displayCityData({ cityData, weatherData }) {
     cardsContainer.style.display = 'grid';
     cardsContainer.innerHTML = ''; // Clear previous results
 
+    if (!cityData.data || cityData.data.length === 0) {
+        const message = document.createElement('p');
+        message.textContent = 'No results found for your search.';
+        message.style.color = 'red';
+        message.style.textAlign = 'center';
+        message.style.fontWeight = 'bold';
+        cardsContainer.appendChild(message);
+        return;
+    }
+
     // Ensure cityData and weatherData are valid
     if (cityData.data && Array.isArray(cityData.data)) {
         cityData.data.forEach(city => {
@@ -56,11 +66,6 @@ async function displayCityData({ cityData, weatherData }) {
             // Append the card to the container
             cardsContainer.appendChild(card);
         });
-    } else {
-        // Fallback message if no city data found
-        const message = document.createElement('p');
-        message.textContent = 'No results found or invalid response from the API.';
-        cardsContainer.appendChild(message);
     }
 }
 

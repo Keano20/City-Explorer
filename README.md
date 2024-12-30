@@ -25,5 +25,6 @@ City Explorer is built using HTML, CSS, and JavaScript, with a focus on leveragi
 
 3. Copy your API key and open the apiCall.js folder.
 
-4. Paste your API key into the empty quotation marks after 'x-rapidapi-key'. 
+4. Paste your API key into the empty quotation marks after 'x-rapidapi-key' and save the file.
+
 5. The application should now be up and running.
